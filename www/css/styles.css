@@ -1,0 +1,676 @@
+body {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+h1 {
+  font-size: 52;
+}
+.header {
+  color: #fff;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo-container {
+  margin: 1em 3em;
+  justify-content: flex-start;
+}
+.header-logo {
+  width: 110px;
+}
+.header-list {
+  display: inline-block;
+  list-style: none;
+  text-transform: uppercase;
+  margin: 0 1.5em;
+  justify-content: flex-end;
+}
+.header-list-item {
+  display: inline-block;
+  padding: 0 2em;
+  line-height: 4em;
+}
+.header-list-item:hover {
+  background-color: #ffcd71;
+}
+.show-menu {
+  text-decoration: none;
+  color: #504f4f;
+  text-align: right;
+  display: none;
+  text-transform: uppercase;
+}
+input#show-menu[type=checkbox] {
+  display: none;
+}
+input#show-menu[type=checkbox]:checked ~ #menu {
+  display: block;
+}
+.cover {
+  background-image: url("../images/bg_home.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 7em;
+  padding-top: 9em;
+  margin: 0;
+  text-align: center;
+  max-width: 100%;
+}
+.cover-title {
+  margin-bottom: 0;
+  text-align: center;
+}
+.cover-copy {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  line-height: 150%;
+  color: #fff;
+  text-align: center;
+}
+.cover-button {
+  background: #f5b63f;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  padding: 0.8em;
+  font-size: 1.2em;
+  font-weight: 700;
+  display: block;
+  align-self: center;
+  margin: 0 auto;
+  box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.2);
+}
+.cover-button:hover {
+  background-color: #ffad11;
+  cursor: pointer;
+}
+#quehacemos {
+  margin-bottom: 0.3em;
+}
+.presentacion-p {
+  color: #0e0e0e;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+  margin-top: 0.3em;
+  font-weight: 400;
+  color: #a2a2a2;
+}
+.bg-barrio_abierto {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  text-align: center;
+  max-width: 100%;
+}
+.img-align {
+  display: flex;
+  margin: 0.8em 2.5em;
+}
+.img-barrio_abierto {
+  max-width: 240px;
+  justify-content: flex-start;
+}
+.barrio-abierto-p {
+  color: #6b6b6b;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+.barrio-abierto-subscribite {
+  color: #6b6b6b;
+  font-size: 1.2em;
+}
+.amatic {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+}
+.fondo-content {
+  background-image: url("../images/bg_transformadores_sociales.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 11em 2em;
+  margin: 0;
+  text-align: left;
+  max-width: 100%;
+  z-index: 99;
+}
+.bg-transformadores {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  text-align: center;
+  max-width: 100%;
+}
+.img-align-transformadores {
+  display: flex;
+  margin: 0.8em 2.5em;
+  justify-content: flex-end;
+}
+.img-transformadores-sociales {
+  align-self: flex-end;
+}
+.separator-orange {
+  background-color: #ee9661;
+  height: 36px;
+  width: 100%;
+}
+.transformadores-button {
+  background: #42b0a9;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  padding: 0.5em;
+  font-size: 1.6em;
+  font-weight: 700;
+  display: block;
+  box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.2);
+}
+.transformadores-button:hover {
+  background-color: #2ac6bc;
+  cursor: pointer;
+}
+.transformadores-text-title {
+  font-size: 52;
+}
+.casos-button {
+  background: #ee9661;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  padding: 1em;
+  font-size: 1em;
+  font-weight: 700;
+  display: block;
+  box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.2);
+  margin-top: 15em;
+  z-index: -99;
+}
+.casos-button:hover {
+  background-color: #ffa067;
+  cursor: pointer;
+}
+.casos-container {
+  display: flex;
+  flex-wrap: row;
+  justify-content: center;
+  padding: 2em 0em;
+  max-width: 100%;
+}
+.casos-container-img {
+  z-index: -99;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.casos-container-item-left {
+  position: absolute;
+  text-align: left;
+  padding: 1em;
+}
+.casos-container-item-right {
+  position: absolute;
+  text-align: right;
+  padding: 1em;
+}
+.casos-img {
+  width: 400px;
+}
+.mate {
+  padding-top: 2em;
+}
+.mate-texto {
+  color: #0e0e0e;
+  font-size: 1.35em;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.3em;
+}
+.mate-imgs {
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+}
+.mate-imgs-item {
+  justify-content: flex-wrap;
+  max-width: 450px;
+}
+#contacto {
+  padding: 3em 4em;
+  display: flex;
+  justify-content: space-around;
+}
+.contacto-item {
+  flex-direction: row;
+}
+.contacto-form {
+  max-width: 500px;
+  text-align: left;
+}
+.contact-message {
+  max-width: 500px;
+}
+.contacto-map-info {
+  margin: 1em;
+}
+.contacto-formulario-container {
+  margin: 0.5em 1em;
+}
+.contacto-title {
+  text-align: left;
+}
+.contacto-form-label {
+  text-align: left;
+}
+.contacto-form-input {
+  border-radius: 6px;
+  border: 1px;
+  padding: 0.4em 6em;
+  font-size: 1.2em;
+  font-weight: 700;
+  display: block;
+}
+.contacto-button {
+  background: #ee9661;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  padding: 0.6em 10.3em;
+  font-size: 1.2em;
+  font-weight: 400;
+  display: block;
+  box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.2);
+}
+.contacto-button:hover {
+  background-color: #ffa067;
+  cursor: pointer;
+}
+footer {
+  background-color: #6c6c6c;
+}
+.footer-container {
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-logo-container {
+  margin: 1em 3em;
+}
+.footer-logo-img {
+  width: 110px;
+}
+.footer-logo {
+  flex-direction: row;
+}
+.footer-texto {
+  font-size: 14px;
+  flex-direction: row;
+  margin: 1.5em;
+}
+.footer-redes {
+  padding-bot: 1em;
+}
+.puntos {
+  max-width: 40px;
+}
+.u-padding-0 {
+  padding: 0em;
+}
+.u-padding-left-right-5 {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.u-margin-0 {
+  margin: 0em;
+}
+.u-margin-5em {
+  margin: 0.5em;
+}
+.u-white {
+  color: #fff;
+}
+.u-font-weight-400 {
+  font-weight: 400;
+}
+.u-width-700px {
+  max-width: 700px;
+}
+.u-width-400px {
+  max-width: 400px;
+}
+.u-violeta {
+  color: #d00155;
+}
+.u-green {
+  color: #70cbc1;
+}
+.u-backgroundcolor-green {
+  background-color: #70cbc1;
+}
+.u-ico {
+  display: inline-block;
+  margin-right: 0.8em;
+}
+.u-m-t-5 {
+  margin-top: 5px;
+}
+.u-m-r-5 {
+  margin-right: 5px;
+}
+.u-m-b-5 {
+  margin-bottom: 5px;
+}
+.u-m-b-50 {
+  margin-bottom: 50px;
+}
+.u-dark-back {
+  background: #f5b63f;
+  color: #fff;
+  height: 4em;
+  box-shadow: 0px 7px 10px 0px rgba(251,180,63,0.2);
+}
+.u-underlined {
+  text-decoration: underline;
+}
+.u-m-l-n2 {
+  margin-left: -2em;
+}
+.u-right {
+  margin-left: 13em;
+}
+.display-none {
+  display: none;
+}
+.anchor {
+  display: inline-block;
+  height: 72px;
+  margin-top: -72px;
+  visibility: hidden;
+}
+.noscroll-y {
+  overflow-y: hidden;
+}
+.noscroll-x {
+  overflow-x: hidden;
+}
+@media (max-width: 1072px) {
+  .planes-cover-title {
+    font-size: 4em;
+  }
+}
+@media (max-width: 878px) {
+  .planes-cover-unipersonales,
+  .planes-cover-sociedades,
+  .planes-cover-monotributo {
+    background-position-y: 0;
+  }
+  .planes-cover-empleados {
+    background-size: auto;
+  }
+}
+@media (max-width: 850px) {
+  .planes-content {
+    flex-flow: row wrap;
+  }
+  .planes-content-plan {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 810px) {
+  .cover {
+    padding-top: 4em;
+    background-size: 100% auto;
+  }
+  .elegirnos-reason-title {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 793px) {
+  #menu {
+    position: static;
+    display: none;
+  }
+  .show-menu {
+    display: block;
+    margin: 1em 1.5em;
+    z-index: 10;
+    position: relative;
+  }
+  .header {
+    background: #fff;
+    color: #504f4f;
+    height: 60px;
+  }
+  .header-logo {
+    width: 70px;
+  }
+  .header-nav {
+    display: block;
+  }
+  .header-logo-container {
+    position: absolute;
+    left: 0;
+    top: 0.2em;
+  }
+  .header-phone {
+    margin: 0 auto;
+    position: absolute;
+    top: 1em;
+    left: 0;
+    right: 0;
+  }
+  .header-list {
+    padding: 1em 0;
+    text-align: center;
+    background: #fff;
+  }
+  .header-list-item {
+    margin: 5px 0;
+    display: block;
+    text-align: center;
+    height: 44px;
+  }
+  .header-list-item:hover {
+    background: #e0dede;
+  }
+}
+@media (max-width: 710px) {
+  .cover {
+    background-size: 120% auto;
+  }
+  .elegirnos-reason-title {
+    font-size: 1.2em;
+  }
+  .clientes-icon-wrap {
+    flex-flow: row wrap;
+  }
+  .overlay-modal {
+    width: 80%;
+  }
+}
+@media (max-width: 680px) {
+  .planes-cover-title {
+    font-size: 3em;
+  }
+  .planes-cover-subtitle {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  .planes-beneficios-container {
+    width: 80%;
+  }
+  .overlay-modal {
+    width: 80%;
+  }
+}
+@media (max-width: 670px) {
+  .cover-title {
+    font-size: 1.6em;
+  }
+  .cover-copy {
+    font-size: 1.2em;
+    line-height: 120%;
+  }
+  .cover-button {
+    padding: 0.6em;
+    width: 150px;
+  }
+  .elegirnos-reason {
+    margin: 0.5em auto;
+  }
+  .elegirnos-reason-wrap {
+    display: block;
+  }
+  .servicios-content {
+    display: block;
+  }
+  .u-m-r-5 {
+    margin: 0;
+  }
+  .suscribe-input-wrap {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .suscribe-btn {
+    display: block;
+    margin: 1em auto;
+  }
+  .overlay-modal {
+    width: 80%;
+  }
+}
+@media (max-width: 550px) {
+  .about {
+    padding: 0;
+    text-align: center;
+  }
+  .about-copy-container {
+    padding: 0 2em;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contacto-form {
+    display: block;
+  }
+  .footer-container {
+    display: block;
+  }
+  .footer-condiciones {
+    display: block;
+  }
+  .footer-logos-afip {
+    display: block;
+    margin: 1em 0em;
+  }
+  .footer-logos-dataweb {
+    display: block;
+    margin: 1em 0em;
+  }
+  .planes-cover-title {
+    font-size: 2.3em;
+  }
+  .planes-cover {
+    padding: 3em 1em;
+  }
+  .overlay-modal {
+    width: 80%;
+  }
+  .thankyou-cover-wrap {
+    margin: 4em auto;
+    width: 80%;
+  }
+}
+@media (max-width: 490px) {
+  .elegirnos-button-contacto {
+    display: block;
+    margin: 0 auto;
+  }
+  .elegirnos-button-ver {
+    display: block;
+    margin: 0.6em auto;
+  }
+  .clientes-icon-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .clientes-icon-container {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 0.2em;
+  }
+  .planes-content {
+    display: block;
+  }
+  .planes-content-plan {
+    padding: 1px 3em 2em;
+  }
+  .suscribe-title {
+    font-size: 1.2em;
+  }
+  .overlay-modal {
+    width: 80%;
+  }
+}
+@media (max-width: 460px) {
+  .cover {
+    background-image: url("images/bg-header-mobile.png");
+    padding: 6em 1em 2em 1em;
+    text-align: center;
+  }
+  .cover-title {
+    max-width: 350px;
+    margin: 0.5em auto;
+  }
+  .cover-copy {
+    max-width: 350px;
+    margin: 0 auto 1em;
+  }
+  .cover-button {
+    margin: 0 auto;
+  }
+  .overlay-modal {
+    width: 80%;
+  }
+}
+@media (max-width: 400px) {
+  .planes-beneficios-list {
+    padding: 0;
+  }
+  .overlay-modal {
+    width: 90%;
+  }
+}
+@media (max-width: 370px) {
+  .planes-cover-title {
+    font-size: 1.8em;
+  }
+  .planes-cover-subtitle {
+    font-size: 1.1em;
+  }
+  .planes-cover-copy {
+    font-size: 1em;
+  }
+  .planes-cover {
+    padding-bottom: 1em;
+  }
+  .header-logo-container {
+    margin-left: 1em;
+  }
+}
